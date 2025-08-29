@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	title="Transform fragmented workflows into unified revenue operations"
+	subtitle="Join hundreds of fast-growing companies using Default to automate complex inbound workflows and eliminate broken integrations that waste 20+ hours weekly."
+	centered={true}
+	customers={[
+		{
+			name: "Sarah Chen",
+			position: "Revenue Operations Manager",
+			imageSrc: "/generated/image-a-professional-business-woman-standing-c.webp"
+		},
+		{
+			name: "Michael Rodriguez",
+			position: "VP of Growth",
+			imageSrc: "/generated/image-a-professional-business-man-in-a-contemp.webp"
+		},
+		{
+			name: "Emily Thompson",
+			position: "Director of Marketing Operations",
+			imageSrc: "/generated/image-a-professional-business-woman-in-a-sleek.webp"
+		},
+		{
+			name: "David Kim",
+			position: "Head of Revenue Operations",
+			imageSrc: "/generated/image-a-professional-business-man-in-a-modern-.webp"
+		},
+		{
+			name: "Jessica Martinez",
+			position: "Growth Operations Lead",
+			imageSrc: "/generated/image-a-professional-business-woman-in-an-eleg.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/posthog.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/attio.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/rootly.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/stackblitz.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
