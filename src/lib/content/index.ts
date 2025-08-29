@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
+	companyName: "Default",
+	description: "Transform fragmented go-to-market operations into unified revenue workflows with visual workflow orchestration.",
 	image: "/og.png",
-	url: "https://example.com",
-	fontFamily: "Inter Variable"
+	url: "https://default.com",
+	fontFamily: "Space Grotesk"
 };
